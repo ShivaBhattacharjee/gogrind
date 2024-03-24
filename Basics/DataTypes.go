@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// Public variables should be declared with a capital letter
+const ThisIsPublic = "Shiva"
+
 func main() {
 
 	/*
@@ -50,4 +53,20 @@ func main() {
 	fmt.Println("Small number is ", smallNum1)
 	var bigNum1 uint64 = 25 // 0 to 18446744073709551615
 	fmt.Println("Big number is ", bigNum1)
+
+	// empty variables
+	var emptyString string
+	fmt.Println("Empty string is ", emptyString)
+
+	// implict type declaration
+	var myWebsite = "https://www.theshiva.xyz" //lexers auto adds the type of the variable
+	fmt.Println("My website is ", myWebsite)
+
+	// Declaring variables without var
+	// := is used to declare and initialize the variable
+	test := "wow this operator is cool"
+	fmt.Println(test)
+
+	// %T is used to print the type of the variable
+	fmt.Printf("Type of public variable is: %T", ThisIsPublic)
 }
