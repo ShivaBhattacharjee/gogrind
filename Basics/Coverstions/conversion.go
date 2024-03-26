@@ -17,7 +17,7 @@ func main() {
 	// ReadString will read until the first occurrence of delim in the input, returning a string containing the data up to and including the delimiter.
 	input, _ := reader.ReadString('\n')
 	fmt.Println("You entered: ", input)
-	fmt.Printf("The type of input is %T \n: ", input)
+	fmt.Printf("The type of input is: %T \n ", input)
 
 	// in order to convert the input to a number we need to use the strconv package
 
@@ -25,6 +25,7 @@ func main() {
 
 	if err != nil {
 		fmt.Println(err)
+		panic(err)
 	} else {
 		conver += 20
 		fmt.Println("The converted number is ", conver)
