@@ -1,0 +1,5 @@
+GOOS="OSTYPE" go build
+
+go build 
+builds for the current os
+whereas by mentioning GOOS it does 
