@@ -35,4 +35,16 @@ func main() {
 	// Check if array is sorted or not
 	isSorted := sort.IntsAreSorted(marks)
 	fmt.Println("Is the array sorted?", isSorted)
+
+	// remove the values from the slice based upon index
+
+	var languages = []string{"C", "C++", "Java", "Python", "Go", "Ruby", "JavaScript"}
+	fmt.Println("The languages are", languages)
+	// append can add as well as remove values from the slice
+
+	const indexToRemove int = 3
+
+	languages = append(languages[:indexToRemove], languages[indexToRemove+1:]...) //This removes thte 3rd index from the slice
+
+	fmt.Println("The languages are after removal ", languages)
 }
